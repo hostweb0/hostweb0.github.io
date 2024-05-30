@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guia de gatos</title>
+    <!--en un link para poner iconos en la pagina web fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- se basa en una guia de gatos-->
+</head>
+<body>
+    <!--agregare unos estilos para que se vea mas ordenada la pagina-->
+    <!--agregare unos estilos para que se vea mas ordenada la pagina-->
+    <style>
+            body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /*tamaño de la caja class"gato1 */
+        .container {
+            width: 60vh;
+            margin: 7px;
+        }
+        /* la cabeza de la pagina cambiamos el color adaptamos la cabeza
+        a movil y pc y lo ajustamos al bloque */
+        header {
+            background-color: rgb(250, 250, 250);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        /* separador del parrafo con el titulo */
+        div.Descripción {
+            padding: 7px;
+        }
+        /* bloque cuadro donde podemos separar los contenedores de cada uno caja principal */
+        div.gato1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            position: relative;
+            border: 2px solid rgb(204, 204, 204);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-sizing: border-box;
+        }
+        /* ajuste para el parrafo para que se adapte */
+        p {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* ajuste para las iamgenes para que se adapten al contenedor */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* ajuste del link donde podemos ver bien la busqueda */
+        .link {
+            margin-top: 10px;
+            text-align: center;
+        }
+        /* el boton del link donde podemos interactuar para tener mas informacion */
+        .link button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        /* color del icono del boton */
+        .link button i {
+            font-size: 20px;
+            color: rgb(253, 198, 198);
+        }
+        /* la mini encuenta de que gato le interesa mas con sus bordes y colores , como
+        tambien adaptacion para movil y pc */
+        div.encuesta{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            position: relative;
+            border: 2px solid rgb(204, 204, 204);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-sizing: border-box;
+        }
+        /* separacion del titulo con las encuesta */
+        .encuesta h2{
+            padding: 5px;
+        }
+        /* separancion del input para tener mas organizacion y que no este todo pegado */
+        form{
+            display: flex;
+            margin: 5px;
+        }
+        /* adaptacion calidad pantalla */
+        .encuesta{
+            width: 60vh;
+            margin: 7px;
+        }
+        /* la tabla de estrellas con su tamaño adaptable */
+        table {
+            margin: 5px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        /* las tablas y su marco con color */
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        /* color de tabla para que se vea maas estetico */
+        th {
+            background-color: #f2f2f2;
+        }
+        /* color de tabla para que se vea maas estetico */
+        td {
+            background-color: #f9f9f9;
+        }
+        /* color de las estrellas para que se va mas estetico */
+        td i.fa-star {
+            color: yellow;
+        }
+        /* adaptacion del gif para que se vea mejor */
+        img{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+
+        }
+    </style>
+    <!--todo esta adaptado a pc y movil, no use mucho css todo se repite , solo es para que se vea
+    mas lindo y organizado-->
+    <!---->
+    <!-- cabeza de la pagina-->
+<header>
+    <h1>Tipos de Gatos: Una Guía</h1>
+    <!--descripcion de la pagina usando un div para separar las cajas del header-->
+    <div class="Descripción">
+        <h2>Descripción:</h2>
+            <p>Descubre las diversas razas de gatos que existen alrededor del mundo. Desde el majestuoso Maine Coon hasta el 
+                elegante Siamés, cada raza tiene características únicas en términos de apariencia, comportamiento y cuidado.
+                    Aprende sobre sus orígenes,personalidades y necesidades específicas para brindarles el mejor cuidado posible.</p>
+    </div>
+</header>
+    <!--puse una imagen del gato con una mini descripcion de el con un boton de busqueda -->
+<div class="container">
+    <div class="gato1">
+        <h3>Gato Bosque de Noruega</h3>
+    <img src="imagenes/bosque noruega.jpeg" alt="gato bosque noruega">
+    <p>El Gato Bosque de Noruega es una raza robusta y majestuosa, originaria de los bosques escandinavos. Con su pelaje denso y resistente al agua, 
+        están perfectamente adaptados a climas fríos. Son conocidos por su naturaleza amigable y juguetona, combinada con una gran independencia.
+            Estos gatos son excelentes escaladores y cazadores, y requieren un ambiente que les permita explorar y mantenerse activos.</p>
+            <!--puse un link en un boton con un icono de busqueda para el que quiera tener mas info sobre el gato-->
+            <a href="https://www.purina.es/encuentra-mascota/razas-de-gato/bosque-de-noruega" class="link">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </a>
+    </div>
+</div>
+<div class="container">
+    <div class="gato1">
+        <h3>Don Gato Sphynx</h3>
+        <img src="imagenes/don sphynx.jpeg" alt="gato sphynx">
+        <p>es una raza de gato originaria de Rusia, conocida por su apariencia distintiva sin pelo. 
+            Esta peculiaridad se debe a una mutación genética natural. 
+            Los Don Sphynx son gatos de tamaño mediano, con una piel suave y arrugada que puede venir en una variedad de colores y patrones.
+            Su personalidad es afectuosa y extrovertida; son gatos curiosos, sociables y muy apegados a sus dueños.
+            Además, requieren cuidados específicos para mantener su piel saludable debido a la falta de pelaje.
+        </p>
+                <!--puse un link en un boton con un icono de busqueda para el que quiera tener mas info sobre el gato-->
+                <a href="https://es.wikipedia.org/wiki/Don_sphynx" class="link">
+                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </a>
+    </div>
+</div>
+<div class="container">
+        <div class="gato1">
+            <h3>Gato Americano</h3>
+            <img src="imagenes/gato americano.jpeg" alt="gato americano">
+            <p>El Gato Americano, comúnmente conocido como American Shorthair, es una raza popular en los Estados Unidos, reconocida por su robusta constitución y naturaleza amigable. 
+                Tienen un pelaje corto y denso que puede presentar una variedad de colores y patrones.
+                Los American Shorthair son conocidos por su adaptabilidad y buena salud, siendo excelentes compañeros tanto para familias como para personas solas.
+                Son gatos inteligentes, juguetones y con un temperamento equilibrado, lo que los hace fáciles de entrenar y convivir.
+                Además, su mantenimiento es sencillo debido a su pelaje corto, que requiere un cepillado ocasional.
+            </p>
+                    <!--puse un link en un boton con un icono de busqueda para el que quiera tener mas info sobre el gato-->
+                    <a href="https://www.purina.es/encuentra-mascota/razas-de-gato/americano-de-pelo-duro" class="link">
+                        <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </a>
+        </div>
+</div>
+<div class="container">
+    <div class="gato1">
+                <h3>Gato Neva Masquerade</h3>
+                <img src="imagenes/neva masquerade.jpeg" alt="gato neva masquerade">
+                <p>El Gato Neva Masquerade es una variante del Siberiano, caracterizada por su distintivo pelaje de punto de color y sus impresionantes ojos azules.
+                    Este gato combina una apariencia majestuosa con una personalidad amigable y sociable.
+                    Su pelaje es denso y resistente al agua, adaptado para climas fríos, y requiere un cepillado regular para mantenerlo en buen estado.
+                    Los Neva Masquerade son conocidos por ser cariñosos, juguetones y muy leales a sus dueños, lo que los convierte en una excelente elección para familias y hogares con otros animales.
+                    Su naturaleza curiosa y activa asegura que siempre estén entretenidos y proporcionen compañía agradable.
+                </p>
+                        <!--puse un link en un boton con un icono de busqueda para el que quiera tener mas info sobre el gato-->
+                        <a href="https://www.royalcanin.com/ar/cats/breeds/neva-masquerade" class="link">
+                            <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </a>
+    </div>
+</div>
+<div class="container">
+                <div class="gato1">
+                    <h3>Gato Ragamuffin</h3>
+                    <img src="imagenes/ragamuffin.jpeg" alt="gato ragamuffin">
+                    <p>El Gato RagaMuffin es conocido por su temperamento dócil y su naturaleza afectuosa.
+                        Este felino de gran tamaño tiene un pelaje suave y sedoso que viene en una variedad de colores y patrones.
+                        Con su robusta constitución y ojos expresivos, el RagaMuffin es tanto hermoso como amigable.
+                        Son excelentes compañeros, ya que disfrutan de la compañía humana y se adaptan bien a diferentes entornos, incluidos aquellos con niños y otras mascotas.
+                        Su personalidad relajada y cariñosa los convierte en una opción ideal para quienes buscan un gato tranquilo y afectuoso.
+                    </p>
+                            <!--puse un link en un boton con un icono de busqueda para el que quiera tener mas info sobre el gato-->
+                            <a href="https://www.royalcanin.com/ar/cats/breeds/ragamuffin" class="link">
+                                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </a>
+                    </div>
+</div>
+<div class="container">
+                    <div class="gato1">
+                        <h3>Gato scottish</h3>
+                        <img src="imagenes/scottish fold.jpeg" alt="gato scottish">
+                        <p>El gato Scottish, también conocido como Scottish Fold, es una raza de gato conocida por sus orejas plegadas hacia adelante, lo que les da un aspecto adorable y distintivo.
+                            Tienen cabezas redondeadas, ojos grandes y expresivos, y cuerpos compactos y musculosos. Su pelaje puede ser corto o largo, y viene en una variedad de colores y patrones.
+                            Son conocidos por ser amigables, cariñosos y tranquilos, lo que los convierte en excelentes compañeros para familias y personas que buscan una mascota cariñosa y adaptable.
+                        </p>
+                                <!--puse un link en un boton con un icono de busqueda para el que quiera tener mas info sobre el gato-->
+                                <a href="https://www.royalcanin.com/ar/cats/breeds/scottish-fold" class="link">
+                                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </a>
+                        </div>
+</div>
+                    <!--agregue una mini encuenta de que gato les gusta mas-->
+                    <div class="encuesta">
+                        <!--puse  un titulo con un icono de gato (decoracion)-->
+                    <h2><i class="fa-solid fa-cat"></i>Elije el gato que mas te intereso de los tres:</h2>
+                    <form>
+                        <!--puse un input para que marque un casillero de los tres-->
+                        <input type="radio" id="gatos" name="gato_fav" value="gato">
+                        <label for="gatos">Gato Americano</label><br>
+                        <input type="radio" id="gatos" name="gato_fav" value="gato">
+                        <label for="gatos">Gato Bosque de Noruega</label><br>
+                        <input type="radio" id="gatos" name="gato_fav" value="gato">
+                        <label for="gatos">Gato Ragamuffin</label><br>
+                        
+                    </form>
+                </div>
+                    <div class="encuesta">
+                    <h2><i class="fa-solid fa-cat"></i>Elije el gato que mas te intereso de los tres:</h2>
+                    <form>
+                        <input type="radio" id="gatos" name="fav_gatos" value="gatos">
+                        <label for="gatos">Don Gato Sphynx</label><br>
+                        <input type="radio" id="gatos" name="fav_gatos" value="gatos">
+                        <label for="gatos">Gato Neva Masquerade</label><br>
+                        <input type="radio" id="gatos" name="fav_gatos" value="gatos">
+                        <label for="gatos">Gato scottish</label><br>
+                    </form>
+                </div>
+            <table>
+                <!--hice una tabla con las estrellas de los gatos mas lindos-->
+                <tr>
+                    <!--es el titulo de la tabla-->
+                    <th>Gatos</th>
+                    <th>Estrellas para los mas lindos</th>
+                </tr>
+                <tr>
+                    <td>Gato Bosque de Noruega</td>
+                    <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+                </tr>
+                <tr>
+                    <td>Gato Americano</td>
+                    <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+                </tr>
+                <tr>
+                    <td>Gato Ragamuffin</td>
+                    <td><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+                </tr>
+                <tr>
+                    <td>Don Gato Sphynx</td>
+                    <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+                </tr>
+                <tr>
+                    <td>Gato Americano</td>
+                    <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+                </tr>
+                <tr>
+                    <td>Gato scottish</td>
+                    <td><i class="fa-solid fa-star"></i><!--estrella para marcar cual es mas lindo--></td>
+                </tr>
+            </table>
+            <!--en ves de un video agregue un gif para que se vea mas lindo-->
+            <img src="imagenes/gato.gif" alt="gato">
+</body>
+</html>
